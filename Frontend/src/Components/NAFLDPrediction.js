@@ -40,7 +40,7 @@ function NAFLDPrediction() {
     }
 
     try {
-      const response = await fetch('/predict/nafld', {
+      const response = await fetch('https://livercheck.onrender.com/predict/nafld', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

@@ -45,7 +45,7 @@ function ALDPrediction() {
     }
 
     try {
-      const response = await fetch('/predict/ald', {
+      const response = await fetch('https://livercheck.onrender.com/predict/ald', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
